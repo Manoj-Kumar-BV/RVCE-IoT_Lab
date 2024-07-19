@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\dc_motor.o"
+--library_type=microlib --strict --scatter ".\Objects\DC_Motor.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\DC_Motor.map" -o .\Objects\DC_Motor.axf
